@@ -1,13 +1,20 @@
 import React from "react";
 import Input from "../../Elements/input";
+import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Footer = () => {
+    useEffect(()=>{
+      Aos.init({duration:1000})
+    },[])
+
   return (
-    <footer className="bg-blue-900 text-white py-12 px-6 md:px-20 ">
+    <footer data-aos='fade-up' className="bg-blue-900 text-white py-12 px-6 md:px-20 ">
       <div className="grid md:grid-cols-2 gap-10">
 
         <div>
-        <img className="w-50 mb-9" src="image/LOGO-HUMMATECH.png" alt="" />       
+        <img className="w-50 mb-9" src="images/logo/hummatech-light.png" alt="" />       
           <h2 className="text-2xl font-semibold mb-3">Contact Us & Get Fast Quotation</h2>
           <p className="text-gray-300 mb-6">
             Have question in mind? Come tell us what you need!
@@ -45,15 +52,20 @@ const Footer = () => {
         </div>
         
         <div>
-         
-            <h3 className="font-semibold mb-2 text-2xl">Malang Office</h3>
+              <div className="flex items-center gap-2">
+                <h3 className="font-bold text-2xl">Malang Office</h3>
+                <img className="w-15 h-15 " src="images/logo/marker1.png" alt="Marker" />
+              </div>
+
+           
+                
                 <p className="text-gray-300 font-semibold">
                 Perum Permata Regency 1 Blok 10/28, Perun Gpa, Ngijo, Kec. Karang Ploso, Kabupaten Malang, Jawa Timur 65152
                 </p>
 
             <div className="mt-6 space-y-2 text-sm font-semibold">
-                <h1 className="font-bold text-2xl">More Info</h1>
-                <p> <span className="font-bold">Email</span>  : info@hummatech.com</p>
+                <h3 className="font-bold text-2xl">More Info</h3>
+                <p> <span className="font-bold">Email</span>: <br /> info@hummatech.com</p>
                 <p> <span className="font-bold">Phone</span>: <br /> 085176777785</p>               
             </div>
 
