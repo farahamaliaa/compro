@@ -1,6 +1,7 @@
 import Footer from "../components/Fragments/Footer/MainFooter";
 import { useState, useEffect } from "react";
 import MainNavbar from "../components/Fragments/NavBar/MainNavbar";
+import LogoPhilosophy from "./Profile/LogoPhilosophy";
 
 const Dashoard = () => {
   const [loading, setLoading] = useState(true);
@@ -46,7 +47,7 @@ const Dashoard = () => {
   return (
     <>
       <MainNavbar />
-      <div className="my-90"></div>
+      <LogoPhilosophy />
       <Footer />
     </>
   );
