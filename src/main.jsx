@@ -4,12 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainNavbar from './components/Fragments/NavBar/MainNavbar'
+import Dashoard from './Pages/Dashboard'
 
 
 const router = createBrowserRouter([
   {
-    path: "/home",
-    element: <MainNavbar />
+    path: "",
+    element: <Dashoard></Dashoard>
   },
 ])
 
