@@ -76,9 +76,22 @@ const Footer = () => {
 
                 <h3 className="font-semibold mb-2 text-2xl">Social Media :</h3>
                 <div className="flex space-x-3">
-                    <img src="/partner1.png" alt="Instagram" className="h-12" />
-                    <img src="/partner2.png" alt="Facebook" className="h-12" />
-                    <img src="/partner2.png" alt="Tweeter" className="h-12" />
+
+                  <div className="flex justify-center items-center">
+                     <img src="image/twiter.png" alt="Instagram" className="h-5" />
+                      <a href="#">Tweeter</a>
+                  </div>
+
+                  <div className="flex justify-center items-center">
+                      <img src="image/facebook.png" alt="Facebook" className="h-5" />
+                      <a href="#">Facebook</a>
+                  </div>
+
+                  <div className="flex justify-center items-center">
+                      <img src="image/instagram.png" alt="Facebook" className="h-5" />
+                      <a href="#">Instagram</a>
+                  </div>
+                    
                 </div>
             </div>           
           </div>          
