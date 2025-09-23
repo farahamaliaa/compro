@@ -38,8 +38,8 @@ const LogoPhilosophy = () => {
 
   return (
     <div className="py-12 px-6">
-        <h2 className="text-center bg-gradient-to-r from-blue-600 to-blue-300 text-lg bg-clip-text text-transparent font-bold" data-aos="fade-down">FILOSOFI LOGO</h2>
-        <h1 className="text-center font-bold text-3xl md:text-4xl pt-2" data-aos="fade-up">Logo Hummatech</h1>
+        <h2 className="text-center bg-gradient-to-r from-blue-600 to-blue-300 text-lg bg-clip-text text-transparent font-bold relative -z-10" data-aos="fade-down">FILOSOFI LOGO</h2>
+        <h1 className="text-center font-bold text-3xl md:text-4xl pt-2 relative -z-10" data-aos="fade-up">Logo Hummatech</h1>
         <div className="flex items-center justify-center space-x-2 pt-4" data-aos="zoom-in">
             <div className="w-4 h-0.5 bg-blue-500"></div>
             <div className="w-14 h-0.5 bg-blue-500"></div>
