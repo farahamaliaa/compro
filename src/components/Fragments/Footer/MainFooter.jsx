@@ -10,7 +10,7 @@ const Footer = () => {
     },[])
 
   return (
-    <footer data-aos='fade-up' className="bg-blue-900 text-white py-12 px-6 md:px-20 ">
+    <footer data-aos='fade-up' className="bg-gray-900 text-white py-12 px-6 md:px-20 ">
       <div className="grid md:grid-cols-2 gap-10">
 
         <div>
