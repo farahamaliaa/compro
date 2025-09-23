@@ -1,9 +1,16 @@
 import React from "react";
 import Input from "../../Elements/input";
+import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Footer = () => {
+    useEffect(()=>{
+      Aos.init({duration:1000})
+    },[])
+
   return (
-    <footer className="bg-blue-900 text-white py-12 px-6 md:px-20 ">
+    <footer data-aos='fade-up' className="bg-blue-900 text-white py-12 px-6 md:px-20 ">
       <div className="grid md:grid-cols-2 gap-10">
 
         <div>

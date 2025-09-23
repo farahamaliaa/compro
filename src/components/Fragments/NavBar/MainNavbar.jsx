@@ -1,14 +1,16 @@
+import { useEffect } from "react";
 import LinkTo from "../../Elements/Links/link";
-
-
-
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const MainNavbar = () => {
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
     return (
       <>
      
-    <nav className="bg-white shadow-sm w-full z-50">
+    <nav data-aos='fade-down' className="bg-white shadow-sm w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         
         {/* Logo */}
