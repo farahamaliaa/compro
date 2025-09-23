@@ -7,13 +7,14 @@ import LinkTo from "../../Elements/Links/link";
 const MainNavbar = () => {
     return (
       <>
+     
     <nav className="bg-white shadow-sm w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         
         {/* Logo */}
         <div className="flex items-center">
           <img
-            src="image/LOGO-HUMMATECH.png" 
+            src="images/logo/hummatech-dark.png" 
             alt="Logo"
             className="h-10 w-50"
           />
@@ -46,7 +47,8 @@ const MainNavbar = () => {
             <span>About ▾</span>
             <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all">
               <LinkTo to="#" text="Structure"></LinkTo>
-              <LinkTo to="#" text="Philosophy"></LinkTo>
+              <LinkTo to="#" text="Structure Organisation"></LinkTo>
+              <LinkTo to="#" text="Structure Business"></LinkTo>
               <LinkTo to="#" text="Others"></LinkTo>
             </div>  
           </div>
