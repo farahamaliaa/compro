@@ -25,34 +25,32 @@ const MainNavbar = () => {
 
         <div className="hidden md:flex space-x-8 text-gray-800 font-medium">
 
-          <div className="relative group cursor-pointer">
-            <span>Profile ▾</span>
-            <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all">
+          
 
-              <LinkTo text="Visi & Misi"></LinkTo>
-              <LinkTo text="Logo"></LinkTo>
-              <LinkTo text="Team"></LinkTo>
-              
-            </div>
+          <div className="relative group cursor-pointer">
+            <a href="#">Home</a>
           </div>
 
           <div className="relative group cursor-pointer">
-            <span>Organisation ▾</span>
-            <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all">
-              <LinkTo to="#" text= "Development"></LinkTo>
-              
-            </div>
+            <a href="#">Berita</a>
           </div>
 
-          <a href="#">Home</a>
+          <div className="relative group cursor-pointer">
+            <a href="#">Hubungi</a>
+          </div>
+
+          
 
           <div className="relative group cursor-pointer">
             <span>About ▾</span>
             <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all">
-              <LinkTo to="#" text="Structure"></LinkTo>
+              <LinkTo to="#" text="Profile"></LinkTo>
               <LinkTo to="#" text="Structure Organisation"></LinkTo>
               <LinkTo to="#" text="Structure Business"></LinkTo>
-              <LinkTo to="#" text="Others"></LinkTo>
+              <LinkTo to="#" text="Visi & Misi"></LinkTo>
+              <LinkTo to="#" text="Logo"></LinkTo>
+              <LinkTo to="#" text="Team"></LinkTo>
+
             </div>  
           </div>
         </div>
