@@ -27,6 +27,7 @@ const MainNavbar = () => {
             <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all">
 
               <LinkTo text="Visi & Misi"></LinkTo>
+              <LinkTo text="Logo"></LinkTo>
               <LinkTo text="Team"></LinkTo>
               
             </div>

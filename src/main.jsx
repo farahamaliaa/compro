@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainNavbar from './components/Fragments/NavBar/MainNavbar'
 import Dashoard from './Pages/Dashboard'
 import Structure from './Pages/About/Structure.jsx'
+import LogoPhilosophy from './Pages/Profile/LogoPhilosophy.jsx'
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "structure",
     element: <Structure></Structure>
+  },
+  {
+    path: "logo",
+    element: <LogoPhilosophy></LogoPhilosophy>
   }
 ])
 
