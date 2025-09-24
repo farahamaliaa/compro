@@ -7,6 +7,7 @@ import MainNavbar from './components/Fragments/NavBar/MainNavbar'
 import Dashoard from './Pages/Dashboard'
 import Structure from './Pages/About/Structure.jsx'
 import LogoPhilosophy from './Pages/Profile/LogoPhilosophy.jsx'
+import Profile from './Pages/Profile.jsx'
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "structure",
     element: <Structure></Structure>
+  },
+  {
+    path: "profile",
+    element: <Profile></Profile>
   },
   {
     path: "logo",

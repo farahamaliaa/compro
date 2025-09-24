@@ -44,7 +44,7 @@ const MainNavbar = () => {
           <div className="relative group cursor-pointer">
             <span>About ▾</span>
             <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:translate-y-1 transition-all">
-              <LinkTo to="#" text="Profile"></LinkTo>
+              <LinkTo to="profile" text="Profile"></LinkTo>
               <LinkTo to="#" text="Structure Organisation"></LinkTo>
               <LinkTo to="#" text="Structure Business"></LinkTo>
               <LinkTo to="#" text="Visi & Misi"></LinkTo>
