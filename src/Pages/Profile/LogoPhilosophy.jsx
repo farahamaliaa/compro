@@ -1,62 +1,56 @@
 import React from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css'
+import { BsHouseFill } from "react-icons/bs";
 import { useEffect } from "react";
 
 const LogoPhilosophy = () => {
     useEffect(() => {
         Aos.init({ duration: 800, once: true});
     }, []);
-
-    const filosofi = [
-        {
-            icon: <img src="/philosophy/H.png" className="w-8 h-6"/>,
-            title: "Huruf H",
-            desc: "Sebagai huruf inisial dari Hummatech.",
-        },
-        {
-            icon: <img src="/philosophy/genteng.png" className="w-8 h-4"/>,
-            title: "Simbol Genteng",
-            desc: "Membentuk rumah sebagai simbol produksi teknologi.",
-        },
-        {
-            icon: <img src="/philosophy/biru.png" className="w-10 h-8"/>,
-            title: "warna Biru",
-            desc: "Mencerminkan profesionalitas dan kepercayaan.",
-        },
-        {
-            icon: <img src="/philosophy/humma.png" className="w-16 md:w-24 h-6"/>,
-            title: "Nama Humma",
-            desc: "Dari bahasa Arab berarti “bersama”, mencerminkan kolaborasi.",
-        },
-        {
-            icon: <img src="/philosophy/tech.png" className="w-10 md:w-14 h-6"/>,
-            title: "Tech",
-            desc: "Singkatan dari Technology sebagai core business Hummatech.",
-        },
-    ];
+    
+    const philosophyPoints = [
+  "Huruf H sebagai huruf inisial dari Hummatech.",
+  "Terdapat simbol genteng diatas huruf H membentuk rumah sebagai simbol untuk rumah produksi teknologi.",
+  "Warna biru merupakan warna yang menjelaskan tentang profesionalitas.",
+  "Nama Humma berasal dari bahasa arab yang berarti 'bersama' yang bermakna bahwa Hummatech ini perusahaan yang dikembangkan bersama-sama, baik pihak internal maupun bersama pihak eksternal, sehingga membentuk ekosistem kolaborasi untuk berkembang bersama.",
+  "Tech merupakan inisial nama dari Technology yang merupakan core business (bisnis utama) dari perusahaan Hummatech."
+];
 
   return (
-    <div className="py-12 px-6">
-        <h2 className="text-center bg-gradient-to-r from-blue-600 to-blue-300 text-lg bg-clip-text text-transparent font-bold relative -z-10" data-aos="fade-down">FILOSOFI LOGO</h2>
-        <h1 className="text-center font-bold text-3xl md:text-4xl pt-2 relative -z-10" data-aos="fade-up">Logo Hummatech</h1>
-        <div className="flex items-center justify-center space-x-2 pt-4" data-aos="zoom-in">
-            <div className="w-4 h-0.5 bg-blue-500"></div>
-            <div className="w-14 h-0.5 bg-blue-500"></div>
-        </div>
-        <div className="max-w-6xl mx-auto grid gap-12 mt-16 items-center">
-            <div className="flex justify-center">
-                <img src="/images/logo/hummatech-square.png" alt="Logo Hummatech" className="md:w-[350px] w-72 md:h-[400px] h-52 object-contain drop-shadow-2xl" data-aos="zoom-in" data-aos-duration="1200" />
-            </div>
-            <div className="grid md:grid-cols-2  gap-4">
-                {filosofi.map((item, index) => (
-                    <div key={index} className="flex flex-col items-start gap-3 p-5 bg-white rounded-xl shadow-md hover:-translate-y-1 transition duration-300 border border-blue-100" data-aos="fade-up" data-aos-delay={index * 200}>
-                        <div>{item.icon}</div>
-                        <h3 className="font-semibold text-lg text-gray-800">{item.title}</h3>
-                        <p className="text-gray-600 text-sm">{item.desc}</p>
+    <div className="min-h-screen px-2">
+        <div>
+            <div className="relative w-full h-56 overflow-hidden -z-10">
+            <img src="/images/banner/10.jpg" alt="Banner" className="w-full h-full object-cover object-center"/>
+            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center z-20 px-4" data-aos="fade-down">
+                <h1 className="text-white text-2xl md:text-4xl  font-bold">FILOSOFI LOGO</h1>
+                <nav className="flex items-center space-x-2 text-white text-sm md:text-base pt-3">
+                    <div className="flex items-center space-x-1">
+                        <BsHouseFill size={16}/>
+                        <span className="font-medium">HOME</span>
                     </div>
-                ))}
+                    <div className="bg-white w-3 h-px"></div>
+                    <span className="font-medium">ABOUT </span>
+                </nav>
             </div>
+            </div>
+        </div>
+
+        <div className="pb-16">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center pt-16 mb-8 gap-16">
+            <div className="flex-shrink-0 flex justify-center lg:justify-start" data-aos="zoom-in">
+                <img src="/images/logo/mobilelogo.png" alt="Hummatech Logo" className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[22rem] lg:h-96 lg:mt-10 object-contain" />
+            </div>
+            <div data-aos="fade-up">
+                <h1 className="font-bold text-2xl md:text-4xl pt-2 pb-2">Filosofi Logo</h1>
+                <ol className="list-decimal list-outside pl-6 lg:list-inside lg:pl-0 space-y-2 text-gray-700 leading-relaxed text-sm sm:text-base md:text-lg">
+                {philosophyPoints.map((point, index) => (
+                    <li key={index} data-aos="fade-up" data-aos-delay={index * 150}>{point}</li>
+                ))}
+            </ol>
+            </div>
+        </div>
         </div>
     </div>
   )
