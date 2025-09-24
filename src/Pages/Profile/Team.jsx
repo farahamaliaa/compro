@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 import { BsHouseFill } from "react-icons/bs";
 import { FaShareAlt } from "react-icons/fa";
 import { useEffect } from "react";
+import Footer from "../../components/Fragments/Footer/MainFooter";
+import MainNavbar from "../../components/Fragments/NavBar/MainNavbar";
 
 const Team = () => {
   useEffect(() => {
@@ -43,6 +45,8 @@ const Team = () => {
     },
   ];
   return (
+   <>
+    <MainNavbar />
     <div className="min-h-screen px-2">
       <div>
         <div className="relative w-full h-64 overflow-hidden -z-10">
@@ -121,6 +125,8 @@ const Team = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
