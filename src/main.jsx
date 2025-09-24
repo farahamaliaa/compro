@@ -8,6 +8,7 @@ import MainNavbar from './components/Fragments/NavBar/MainNavbar'
 import Dashoard from './Pages/Dashboard'
 import Structure from './Pages/About/StructureOrganisations.jsx'
 import LogoPhilosophy from './Pages/Profile/LogoPhilosophy.jsx'
+import Team from './Pages/Profile/Team.jsx';
 import StructureOrganisations from './Pages/About/StructureOrganisations.jsx'
 
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "logo",
     element: <LogoPhilosophy></LogoPhilosophy>
+  },
+  {
+    path: "team",
+    element: <Team></Team>
   }
 ])
 
