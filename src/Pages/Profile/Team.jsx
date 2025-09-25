@@ -1,7 +1,7 @@
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { BsHouseFill } from "react-icons/bs";
+import { FaHome } from "react-icons/fa";
 import { FaShareAlt } from "react-icons/fa";
 import { useEffect } from "react";
 import Footer from "../../components/Fragments/Footer/MainFooter";
@@ -44,6 +44,21 @@ const Team = () => {
       image: "/images/team/6.jpg",
     },
   ];
+
+  const handleShare = (member) => {
+    if (navigator.share) {
+        navigator.share({
+            title: `Kenalan dengan ${member.name}`,
+            text: `${member.name} - ${member.role} dari tim kami.`,
+            url: window.location.href,
+        })
+        .then(() => console.log("Shared successfully"))
+        .catch((error) => console.error("Error sharing:" , error));
+    } else {
+        alert("Fitur share tidak didukung dibrowser ini.")
+    }
+  }
+
   return (
    <>
     <MainNavbar />
@@ -65,7 +80,7 @@ const Team = () => {
             </h1>
             <nav className="flex items-center space-x-2 text-white text-sm md:text-base pt-3">
               <div className="flex items-center space-x-1">
-                <BsHouseFill size={16} />
+                <FaHome size={16} />
                 <span className="font-medium">HOME</span>
               </div>
               <div className="bg-white w-3 h-px"></div>
@@ -93,7 +108,8 @@ const Team = () => {
           <img
             src="/images/shape/3.png"
             alt="shape"
-            className="w-40 md:w-56 lg:w-72 xl:w-80 h-auto opacity-70"
+            className="w-40 md:w-56 lg:w-64 h-auto opacity-70"
+            data-aos="fade-up"
           />
         </div>
 
@@ -110,7 +126,7 @@ const Team = () => {
                 className="w-full h-76 object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute bottom-4 right-4 group">
-                <button className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-3 rounded-full shadow-lg hover:scale-110 hover:rotate-6 transition-transform duration-300">
+                <button onClick={() => handleShare(member)} className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-3 rounded-full shadow-lg hover:scale-110 hover:rotate-6 transition-transform duration-300">
                   <FaShareAlt size={16} />
                 </button>
               </div>

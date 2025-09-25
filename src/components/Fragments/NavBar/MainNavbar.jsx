@@ -45,7 +45,7 @@ const MainNavbar = () => {
             </div>
 
             <div className="relative group cursor-pointer">
-              <a href="#">Product</a>
+              <a href="/product">Product</a>
             </div>
 
             <div className="relative group cursor-pointer">

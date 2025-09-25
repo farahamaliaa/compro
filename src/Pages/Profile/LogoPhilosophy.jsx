@@ -1,7 +1,7 @@
 import React from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import { BsHouseFill } from "react-icons/bs";
+import { FaHome } from "react-icons/fa";
 import { useEffect } from "react";
 import MainNavbar from "../../components/Fragments/NavBar/MainNavbar";
 import Footer from "../../components/Fragments/Footer/MainFooter";
@@ -30,7 +30,7 @@ const LogoPhilosophy = () => {
                 <h1 className="text-white text-2xl md:text-4xl  font-bold">Tentang Kami</h1>
                 <nav className="flex items-center space-x-2 text-white text-sm md:text-base pt-3">
                     <div className="flex items-center space-x-1">
-                        <BsHouseFill size={16}/>
+                        <FaHome size={16}/>
                         <span className="font-medium">HOME</span>
                     </div>
                     <div className="bg-white w-3 h-px"></div>

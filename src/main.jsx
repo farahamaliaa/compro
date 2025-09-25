@@ -11,6 +11,11 @@ import LogoPhilosophy from "./Pages/Profile/LogoPhilosophy.jsx";
 import Team from "./Pages/Profile/Team.jsx";
 import StructureOrganisations from "./Pages/About/StructureOrganisations.jsx";
 import RootLayout from "./components/Layouts/RootLayout.jsx";
+import Product from "./Pages/Product/Product.jsx";
+import Index from "./Pages/Product/Kategori/Index.jsx";
+import Software from "./Pages/Product/Kategori/Software.jsx";
+import Website from "./Pages/Product/Kategori/Website.jsx";
+import Mobile from "./Pages/Product/Kategori/Mobile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +27,17 @@ const router = createBrowserRouter([
       { path: "structure-organisations", element: <StructureOrganisations /> },
       { path: "logo", element: <LogoPhilosophy /> },
       { path: "team", element: <Team /> },
+
+        {
+        path: "product",
+        element: <Product />,
+        children: [
+          { index: true, element: <Index /> },      // /product
+          { path: "software", element: <Software /> }, // /product/software
+          { path: "website", element: <Website /> },   // /product/website
+          { path: "mobile", element: <Mobile /> },     // /product/mobile
+        ],
+      },
     ],
   },
 ]);
