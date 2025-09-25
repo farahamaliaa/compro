@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import LinkTo from "../../Elements/Links/link";
+import { FaHome } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +19,7 @@ const MainProfile = () => {
 
       {/* ===== Banner ===== */}
       <div
-        className="w-full h-[250px] relative bg-center bg-cover py-16 text-center"
+        className="w-full h-[250px] relative bg-center -z-10 bg-cover py-16 text-center"
         style={{ backgroundImage: "url('/images/banner/10.jpg')" }}
         data-aos="fade-down"
         data-aos-delay="50"
@@ -35,10 +36,11 @@ const MainProfile = () => {
             PROFILE
           </h1>
           <h2 
-            className="text-lg text-white"
+            className="text-lg text-white flex items-center justify-center mt-5 gap-2 font-bold"
             data-aos="fade-down"
             data-aos-delay="250"
           >
+            <FaHome className="text-white text-xl" />
             BERANDA - TENTANG KAMI - PROFILE
           </h2>
         </div>

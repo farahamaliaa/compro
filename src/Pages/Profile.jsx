@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import MainNavbar from "../components/Fragments/NavBar/MainNavbar";
 import Footer from "../components/Fragments/Footer/MainFooter";
 import MainProfile from "../components/Fragments/Profile/MainProfile";
 
@@ -45,6 +46,7 @@ const Profile = () => {
 
   return (
     <>
+    <MainNavbar />
     <MainProfile />
     <Footer/>
     </>

@@ -1,12 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import 'aos/dist/aos.css';
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainNavbar from './components/Fragments/NavBar/MainNavbar'
 import Dashoard from './Pages/Dashboard'
-import Structure from './Pages/About/Structure.jsx'
+import Structure from './Pages/About/StructureOrganisations.jsx'
 import LogoPhilosophy from './Pages/Profile/LogoPhilosophy.jsx'
+import Team from './Pages/Profile/Team.jsx';
+import StructureOrganisations from './Pages/About/StructureOrganisations.jsx'
 import Profile from './Pages/Profile.jsx'
 
 
@@ -16,8 +19,8 @@ const router = createBrowserRouter([
     element: <Dashoard></Dashoard>
   },
   {
-    path: "structure",
-    element: <Structure></Structure>
+    path: "structure-organisations",
+    element: <StructureOrganisations></StructureOrganisations>
   },
   {
     path: "profile",
@@ -26,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "logo",
     element: <LogoPhilosophy></LogoPhilosophy>
+  },
+  {
+    path: "team",
+    element: <Team></Team>
   }
 ])
 
