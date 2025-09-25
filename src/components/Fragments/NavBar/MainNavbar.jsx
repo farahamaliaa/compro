@@ -45,6 +45,10 @@ const MainNavbar = () => {
             </div>
 
             <div className="relative group cursor-pointer">
+              <a href="#">Product</a>
+            </div>
+
+            <div className="relative group cursor-pointer">
               <a href="#">Hubungi</a>
             </div>
 
@@ -134,6 +138,9 @@ const MainNavbar = () => {
           <div className="px-6 py-4 space-y-4 text-gray-800 font-medium">
             <a href="/Dashboard" className="block">
               Home
+            </a>
+            <a href="#" className="block">
+              Product
             </a>
             <a href="#" className="block">
               Berita
