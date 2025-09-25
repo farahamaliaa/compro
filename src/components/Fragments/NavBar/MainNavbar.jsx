@@ -3,6 +3,7 @@ import LinkTo from "../../Elements/Links/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+
 const MainNavbar = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,8 +26,9 @@ const MainNavbar = () => {
   }, [isAboutOpen]);
   return (
     <>
-      <nav data-aos="fade-down" className="bg-white shadow-sm w-full z-50">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <nav data-aos="fade-down" className="bg-white shadow-sm w-full">
+        <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center z-50">
+          {/* Logo */}
           <div className="flex items-center">
             <img
               src="images/logo/hummatech-dark.png"
@@ -72,7 +74,7 @@ const MainNavbar = () => {
                     to="/structure-organisations"
                     text="Structure Organisation"
                   ></LinkTo>
-                  <LinkTo to="#" text="Structure Business"></LinkTo>
+                  <LinkTo to="/structure-usaha" text="Structure Businisess"></LinkTo>
                   <LinkTo to="#" text="Visi & Misi"></LinkTo>
                   <LinkTo to="/logo" text="Logo"></LinkTo>
                   <LinkTo to="/Team" text="Team"></LinkTo>
@@ -167,7 +169,7 @@ const MainNavbar = () => {
                     to="/structure-organisations"
                     text="Structure Organisation"
                   ></LinkTo>
-                  <LinkTo to="#" text="Structure Business"></LinkTo>
+                  <LinkTo to="/structure-usaha" text="Structure Business"></LinkTo>
                   <LinkTo to="#" text="Visi & Misi"></LinkTo>
                   <LinkTo to="#" text="Logo"></LinkTo>
                   <LinkTo to="/team" text="Team"></LinkTo>

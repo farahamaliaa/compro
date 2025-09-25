@@ -11,6 +11,7 @@ import LogoPhilosophy from "./Pages/Profile/LogoPhilosophy.jsx";
 import Team from "./Pages/Profile/Team.jsx";
 import StructureOrganisations from "./Pages/About/StructureOrganisations.jsx";
 import RootLayout from "./components/Layouts/RootLayout.jsx";
+import StructureUsaha from "./Pages/About/StructureUsaha.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "structure-organisations", element: <StructureOrganisations /> },
       { path: "logo", element: <LogoPhilosophy /> },
       { path: "team", element: <Team /> },
+      { path: "structure-usaha", element: <StructureUsaha /> },
     ],
   },
 ]);
