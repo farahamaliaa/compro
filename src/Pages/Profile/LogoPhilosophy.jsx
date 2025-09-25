@@ -3,6 +3,8 @@ import Aos from "aos";
 import 'aos/dist/aos.css'
 import { BsHouseFill } from "react-icons/bs";
 import { useEffect } from "react";
+import MainNavbar from "../../components/Fragments/NavBar/MainNavbar";
+import Footer from "../../components/Fragments/Footer/MainFooter";
 
 const LogoPhilosophy = () => {
     useEffect(() => {
@@ -19,6 +21,7 @@ const LogoPhilosophy = () => {
 
   return (
     <div className="min-h-screen px-2">
+        <MainNavbar />
         <div>
             <div className="relative w-full h-64 overflow-hidden -z-10">
             <img src="/images/banner/10.jpg" alt="Banner" className="w-full h-full object-cover object-center"/>
@@ -59,6 +62,7 @@ const LogoPhilosophy = () => {
             </div>
         </div>
         </div>
+        <Footer />
     </div>
   )
 }

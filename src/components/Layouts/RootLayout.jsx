@@ -4,6 +4,7 @@ import Loader from "../Fragments/Loader/Loader";
 
 const RootLayout = () => {
   const location = useLocation();
+  
   const [isNavigating, setIsNavigating] = useState(false);
 
   useEffect(() => {
@@ -21,3 +22,4 @@ const RootLayout = () => {
 };
 
 export default RootLayout;
+

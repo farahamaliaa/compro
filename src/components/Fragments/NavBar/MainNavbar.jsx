@@ -70,7 +70,7 @@ const MainNavbar = () => {
                   ></LinkTo>
                   <LinkTo to="#" text="Structure Business"></LinkTo>
                   <LinkTo to="#" text="Visi & Misi"></LinkTo>
-                  <LinkTo to="#" text="Logo"></LinkTo>
+                  <LinkTo to="/logo" text="Logo"></LinkTo>
                   <LinkTo to="/Team" text="Team"></LinkTo>
                 </div>
               )}

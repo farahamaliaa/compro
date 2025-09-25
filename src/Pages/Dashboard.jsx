@@ -46,9 +46,9 @@ const Dashoard = () => {
 
   return (
     <>
-      <MainNavbar />
+      {/* <MainNavbar /> */}
       <LogoPhilosophy />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
