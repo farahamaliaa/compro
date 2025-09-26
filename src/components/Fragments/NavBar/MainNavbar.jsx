@@ -3,7 +3,6 @@ import LinkTo from "../../Elements/Links/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-
 const MainNavbar = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,6 +46,10 @@ const MainNavbar = () => {
             </div>
 
             <div className="relative group cursor-pointer">
+              <a href="/portofolio">Portofolio</a>
+            </div>
+
+            <div className="relative group cursor-pointer">
               <a href="/product">Product</a>
             </div>
 
@@ -74,7 +77,10 @@ const MainNavbar = () => {
                     to="/structure-organisations"
                     text="Structure Organisation"
                   ></LinkTo>
-                  <LinkTo to="/structure-usaha" text="Structure Businisess"></LinkTo>
+                  <LinkTo
+                    to="/structure-usaha"
+                    text="Structure Businisess"
+                  ></LinkTo>
                   <LinkTo to="#" text="Visi & Misi"></LinkTo>
                   <LinkTo to="/logo" text="Logo"></LinkTo>
                   <LinkTo to="/Team" text="Team"></LinkTo>
@@ -141,6 +147,9 @@ const MainNavbar = () => {
             <a href="/Dashboard" className="block">
               Home
             </a>
+            <a href="/portofolio" className="block">
+              Portofolio
+            </a>
             <a href="#" className="block">
               Product
             </a>
@@ -169,7 +178,10 @@ const MainNavbar = () => {
                     to="/structure-organisations"
                     text="Structure Organisation"
                   ></LinkTo>
-                  <LinkTo to="/structure-usaha" text="Structure Business"></LinkTo>
+                  <LinkTo
+                    to="/structure-usaha"
+                    text="Structure Business"
+                  ></LinkTo>
                   <LinkTo to="#" text="Visi & Misi"></LinkTo>
                   <LinkTo to="#" text="Logo"></LinkTo>
                   <LinkTo to="/team" text="Team"></LinkTo>
