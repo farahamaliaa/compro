@@ -1,0 +1,88 @@
+const portofolio = [
+  {
+    id: 1,
+    title:
+      "SIPJAKI (Sistem Informasi Pembina Jasa Konstruksi Kabupaten Pasuruan)",
+    desc: "SIPJAKI merupakan singkatan dari Sistem Informasi Pembina Jasa Konstruksi yang merupakan sistem informasi yang dikelola bersama oleh pembina jasa konstruksi nasional, provinsi dan kabupaten/kota dalam rangka meningkatkan kemudahan akses informasi usaha jasa konstruksi, peningkatan transparansi, serta membantu memperkuat jaringan bisnis pelaku usaha dalam rantai pasok konstruksi.",
+    image: "/images/portfolio/1.png",
+    link: "https://sipjaki.pasuruankab.com/",
+  },
+  {
+    id: 2,
+    title: "Tracer Study SMKN 2 Penajam Paser Utara",
+    desc: "Tracer Study SKADA adalah studi pelacakan jejak lulusan/alumni dari SMK Negeri 2 Penajam Paser Utara (SMKN 2 PPU). Fitur-fitur yang terdapat dalam sistem ini antara lain: Membuat survei dan mendapatkan umpan balik dari lulusan dan pengguna lulusan untuk pengembangan & perbaikan kualitas pendidikan, Mengetahui profil lulusan yang dihasilkan oleh SMKN 2 PPU, Mengetahui kontribusi kurikulum terhadap kompetensi yang ada di dunia kerja, Memonitoring adaptasi lulusan ketika memasuki dunia kerja, Dapat mengupdate kegiatan alumni melalui galeri dan berita, Pihak industri dapat memposting lowongan.",
+    image: "/images/portfolio/2.png",
+    link: "https://tracerstudyskada.com/",
+  },
+  {
+    id: 3,
+    title: "JAJALENPAS (Jaringan Jalan Kabupaten Pasuruan)",
+    desc: "JAJALENPAS merupakan singkatan dari Jaringan Jalan Kabupaten Pasuruan yang merupakan sistem informasi geografis yang berfungsi untuk menginformasikan kondisi jalan yang berada di Kabupaten Pasuruan. Sistem informasi geografis ini dimenampilkan area kecamatan yang berada di Kabupaten Pasuruan beserta jaringan jalannya sampai ke jalan desa. SISTEM JAJALENPAS ini merupakan proyek yang dikerjakan untuk Dinas Bina Marga Kabupaten Pasuruan yang bertugas mengelola proyek konstruksi pembangunan jalan.",
+    image: "/images/portfolio/3.png",
+    link: "https://jajalenpas.pasuruankab.com/",
+  },
+  {
+    id: 4,
+    title: "Libeltix.com - Platform Tiket Event Online Terintegrasi",
+    desc: "Libeltix.com adalah platform tiket event online terintegrasi. Visi libeltix adalah menyediakan manajemen sistem pembelian tiket online yang mudah digunakan, transparan, dan memberikan penawaran harga terbaik. Di dalam sistem ini sudah terdapat pembayaran secara online yang support semua bank, e-wallet, dan QRIS.",
+    image: "/images/portfolio/4.png",
+    link: "https://www.libeltix.com/",
+  },
+  {
+    id: 5,
+    title: "Sistem Kasir (Point of Sales) UD Hany Jaya Sidoarjo",
+    desc: "Hany Jaya adalah sebuah sistem manajemen toko berbasis website yang dirancang untuk membantu pemilik toko dalam mengelola berbagai aspek operasional mereka. Sistem ini mencakup fitur-fitur canggih seperti pencatatan stok barang secara real-time, pemantauan penjualan, pengelolaan pembelian, serta pencatatan dan pengelolaan retur barang. Selain itu, Hany Jaya juga menyediakan kemampuan analisis penjualan yang komprehensif, sehingga memudahkan pemilik toko dalam memahami tren penjualan, mengevaluasi performa produk, dan mengambil keputusan strategis yang tepat untuk mengoptimalkan keuntungan serta efisiensi operasional toko mereka.",
+    image: "/images/portfolio/5.png",
+    link: "https://hanyjaya.mijurnal.com/",
+  },
+  {
+    id: 6,
+    title: "Sistem Manajemen Transaksi CV Sinar Jaya Abadi Plasindo",
+    desc: "SISTEM MANAJEMEN TRANSAKSI merupakan sistem yang mencatat transaksi dari hulu ke hilir, mulai dari pencatatan pesanan dari customer sampai ke supplier, proses pengiriman barang ke customer, sampai penagihan pembayaran kepada customer. Sistem ini dibuat dalam 2 platform, yaitu Web dan Mobile Android. Sistem ini terdapat beberapa pengguna yaitu owner, admin transaksi, admin gudang, collector, sales, dan driver yang memudahkan pengguna dalam menjalankan tugasnya masing-masing.",
+    image: "/images/portfolio/6.png",
+    link: "https://plasindo.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Virtual Reality MEDISIMANFISPAL PTM",
+    desc: "Simulasi AnFisPal berbasis Virtual Reality (VR) adalah inovasi edukasi interaktif yang memperkaya pemahaman anatomi, fisiologi, dan patofisiologi. Pengguna dapat mempelajari struktur tubuh dan proses penyakit dalam lingkungan 3D yang realistis, mendukung paradigma sehat dalam program Indonesia Sehat 3 Pilar. Dirancang untuk mahasiswa, masyarakat, dan petugas kesehatan, SimAnFisPal menghadirkan pengalaman belajar yang imersif dan holistik. Aplikasi ini dapat dijalankan menggunakan perangkat VR seperti Meta Quest dan sejenisnya.",
+    image: "/images/portfolio/7.png",
+    link: "https://hummatech.com/portfolio/virtual-reality-medisimanfispal-ptm",
+  },
+  {
+    id: 8,
+    title: "SIM SMANESA (Sistem Informasi Manajemen SMAN 1 Purwosari)",
+    desc: "Sistem informasi manajemen sekolah berbasis web yang membantu mengelola administrasi sekolah secara real-time dan terintegrasi. Sistem ini memiliki fitur pendataan peserta didik dan GTK yang terintegrasi dengan DAPODIK KEMDIKBUD, terdapat pencatatan pelanggaran siswa, presensi, dan izin keluar-masuk sekolah.",
+    image: "/images/portfolio/8.png",
+    link: "https://sim.smanesa.id/",
+  },
+  {
+    id: 9,
+    title: "E-Collab MNA Polije (Sistem Manajemen Kerjasama Jurusan Agribisnis Polije)",
+    desc: "Sistem yang digunakan mengelola data dan proses usulan kerjasama di Jurusan Manajemen Agribisnis Politeknik Negeri Jember dengan mitra eksternal melalui Unit Kerja Sama Politeknik Negeri Jember. Jurusan mengajukan kerjasama melalui sistem dan dapat dimonitoring melalui progres pengajuan tersebut melalui sistem ini.",
+    image: "/images/portfolio/9.png",
+    link: "https://ecollab-mna.milink.id/",
+  },
+  {
+    id: 10,
+    title: "IMUNSARI (Informasi Imunisasi Puskesmas Sumbersari)",
+    desc: "IMUNSARI merupakan sebuah sistem untuk informasi manajemen imunisasi di wilayah Puskesmas Sumbersari, Kabupaten Jember. Sistem ini dibangun dengan Google App Script dan Google Looker Studio sebagai dashboardnya. Sistem ini dapat mencatat peserta imunisasi di masing-masing posyandu. Melalui dashboard yang informatif dapat mengidentifikasi sebaran imunisasi yang sudah dilakukan serta mengetahui kebutuhan vaksin/ imunisasi untuk periode yang akan datang.",
+    image: "/images/portfolio/10.jpg",
+    link: "https://hummatech.com/portfolio/imunsari-informasi-imunisasi-puskesmas-sumbersari",
+  },
+  {
+    id: 11,
+    title: "AnemiaGo (Aplikasi Pendeteksi Anemia Melalui Mata)",
+    desc: "AnemiaGo merupakan sebuah aplikasi untuk melakukan deteksi dini apakah pengguna mengalami anemia atau tidak. Mekanisme pendeteksiannya dengan memotret area mata dengan membuka kelopak mata bawah. Aplikasi dapat mendeteksi berdasarkan kondisi warna pada area konjungtiva atau bagian dalam kelopak mata bawah.",
+    image: "/images/portfolio/11.png",
+    link: "https://play.google.com/store/apps/details?id=com.anemigo.app",
+  },
+  {
+    id: 12,
+    title: "Petapikia (Pemantauan Tumbuh Kembang Anak, Pemberian Informasi Kesehatan Ibu dan Anak)",
+    desc: "Petapikia merupakan sebuah sistem untuk melakukan pemantauan tumbuh kembang anak, serta pemberian informasi dan komunikasi menggunakan buku kesehatan ibu dan anak. Sistem ini diterapkan di sekolah-sekolah PAUD. Orang tua dan guru PAUD dapat menginputkan pencatatan perkembangan anak seperti kemampuan mengenali warna, mengerti lawan kata, kemampuan berjalan lurus, dan berbagai perkembangan lain yang tercatat dalam sistem petapikia tersebut. Semua perkembangan tersebut tercatat pada sistem dan dapat dimonitoring oleh bidang puskesmas setempat. Dengan adanya sistem ini, orang tua, guru, dan bidan dapat memberikan intervensi untuk menunjang perkembangan anak.",
+    image: "/images/portfolio/12.jpg",
+    link: "https://petapikia.com/",
+  },
+];
+export default portofolio;
