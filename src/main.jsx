@@ -19,6 +19,8 @@ import Software from "./Pages/Product/Kategori/Software.jsx";
 import Website from "./Pages/Product/Kategori/Website.jsx";
 import Mobile from "./Pages/Product/Kategori/Mobile.jsx";
 import StructureUsaha from "./Pages/About/StructureUsaha.jsx";
+import ProductDetail from "./Pages/Product/ProductDetail.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -38,10 +40,11 @@ const router = createBrowserRouter([
         path: "product",
         element: <Product />,
         children: [
-          { index: true, element: <Index /> },      // /product
-          { path: "software", element: <Software /> }, // /product/software
-          { path: "website", element: <Website /> },   // /product/website
-          { path: "mobile", element: <Mobile /> },     // /product/mobile
+          { index: true, element: <Index /> },   
+          { path: "software", element: <Software /> }, 
+          { path: "website", element: <Website /> },   
+          { path: "mobile", element: <Mobile /> },
+          { path: ":id", element: <ProductDetail />}
         ],
       },
       { path: "structure-usaha", element: <StructureUsaha /> },

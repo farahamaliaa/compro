@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 import products from "./dataProduct";
 
 const ProductList = ({ category }) => {
@@ -41,9 +42,12 @@ const ProductList = ({ category }) => {
               {product.desc}
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-              <button className="px-5 py-2.5 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition font-medium shadow-md text-sm md:text-base">
+        <Link
+                to={`/product/${product.id}`}
+                className="px-5 py-2.5 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition font-medium shadow-md text-sm md:text-base"
+              >
                 Lihat Detail
-              </button>
+              </Link>
               <a
                 href={product.link}
                 target="_blank"
