@@ -20,7 +20,7 @@ import Website from "./Pages/Product/Kategori/Website.jsx";
 import Mobile from "./Pages/Product/Kategori/Mobile.jsx";
 import StructureUsaha from "./Pages/About/StructureUsaha.jsx";
 import ProductDetail from "./Pages/Product/ProductDetail.jsx";
-
+import VisiMisi from "./Pages/About/VisiMisi.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +48,7 @@ const router = createBrowserRouter([
         ],
       },
       { path: "structure-usaha", element: <StructureUsaha /> },
+      { path: "visi-misi", element: <VisiMisi/>}
     ],
   },
 ]);
