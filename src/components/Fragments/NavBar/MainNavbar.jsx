@@ -75,7 +75,7 @@ const MainNavbar = () => {
                     text="Structure Organisation"
                   ></LinkTo>
                   <LinkTo to="/structure-usaha" text="Structure Businisess"></LinkTo>
-                  <LinkTo to="#" text="Visi & Misi"></LinkTo>
+                  <LinkTo to="visi-misi" text="Visi & Misi"></LinkTo>
                   <LinkTo to="/logo" text="Logo"></LinkTo>
                   <LinkTo to="/Team" text="Team"></LinkTo>
                 </div>

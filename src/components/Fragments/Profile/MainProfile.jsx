@@ -17,14 +17,12 @@ const MainProfile = () => {
   return (
     <div className="w-full">
 
-      {/* ===== Banner ===== */}
       <div
         className="w-full h-[250px] relative bg-center -z-10 bg-cover py-16 text-center"
         style={{ backgroundImage: "url('/images/banner/10.jpg')" }}
         data-aos="fade-down"
         data-aos-delay="50"
       >
-        {/* Overlay agar banner lebih gelap */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative z-10">
@@ -46,14 +44,12 @@ const MainProfile = () => {
         </div>
       </div>
 
-      {/* ===== Konten Utama ===== */}
       <section
         className="
           max-w-3xl mx-auto px-6 py-16
           grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center
         "
       >
-        {/* Deskripsi */}
         <div className="order-2 md:order-1">
           <p 
             className="font-semibold bg-gradient-to-r from-blue-700 to-sky-400 bg-clip-text text-transparent w-fit"
@@ -92,9 +88,7 @@ const MainProfile = () => {
           </a>
         </div>
 
-        {/* Foto dengan Shape yang Diperbaiki */}
         <div className="relative flex justify-center order-1 md:order-2">
-          {/* Shape dengan warna yang terlihat */}
           <div 
             className="absolute inset-0 flex items-center justify-center"
             data-aos="zoom-in"
