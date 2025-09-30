@@ -22,6 +22,7 @@ import Mobile from "./Pages/Product/Kategori/Mobile.jsx";
 import StructureUsaha from "./Pages/About/StructureUsaha.jsx";
 import ProductDetail from "./Pages/Product/ProductDetail.jsx";
 import VisiMisi from "./Pages/About/VisiMisi.jsx";
+import JobVacancy from "./Pages/Lowongan/JobVacancy.jsx";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,8 @@ const router = createBrowserRouter([
         ],
       },
       { path: "structure-usaha", element: <StructureUsaha /> },
-      { path: "visi-misi", element: <VisiMisi/>}
+      { path: "visi-misi", element: <VisiMisi/>},
+      { path: "job-vacancy", element: <JobVacancy />}
     ],
   },
 ]);

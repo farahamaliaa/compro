@@ -20,17 +20,18 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="mt-8">
+    <div>
       <section className="px-6 md:px-12 lg:px-20 py-10 bg-gray-50">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto pt-12 pb-12">
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-64 md:h-full object-cover rounded-lg transform hover:scale-105 transition duration-500"
-            data-aos="fade-right"
+            className="w-full h-64 md:h-full object-cover rounded-lg"
+             data-aos="fade-right"
           />
+
           <div data-aos="fade-left">
-            <h1 className="text-2xl md:text-4xl font-bold">{product.name}</h1>
+            <h1 className="text-2xl md:text-4xl font-bold ">{product.name}</h1>
             <p className="mt-4 text-gray-600 text-sm md:text-base">
               {product.desc}
             </p>
@@ -46,13 +47,16 @@ const ProductDetail = () => {
         </div>
       </section>
 
-      <section className="relative py-16 md:py-24 bg-gradient-to-r from-blue-100 to-blue-200 overflow-hidden lg:mt-8">
+      <section className="relative py-16 md:py-24 bg-gradient-to-r from-blue-100 to-blue-200 overflow-hidden ">
         <img
           src="/images/shape/9.png"
           alt="Shape"
-          className="absolute right-0 top-10 md:top-24 w-32 md:w-60 opacity-80 object-contain z-0"
+          className="absolute right-0 top-10 md:top-24 w-32 md:w-60 lg:w-auto lg:top-auto opacity-80 object-contain z-0"
         />
-        <div className="text-center max-w-3xl mx-auto mb-12 px-6" data-aos="fade-up">
+        <div
+          className="text-center max-w-3xl mx-auto mb-12 px-6 lg:mt-12"
+          data-aos="fade-up"
+        >
           <p className="text-xs md:text-lg font-bold tracking-wide uppercase bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text text-transparent">
             FITUR-FITUR
           </p>

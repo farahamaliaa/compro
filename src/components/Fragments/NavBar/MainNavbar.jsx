@@ -6,6 +6,8 @@ import "aos/dist/aos.css";
 const MainNavbar = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPortfolioOpen, setIsPortfolioOpen] = useState(false);
+
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -44,17 +46,25 @@ const MainNavbar = () => {
             <div className="relative group cursor-pointer">
               <a href="#">Berita</a>
             </div>
-
-            <div className="relative group cursor-pointer">
-              <a href="/portofolio">Portofolio</a>
-            </div>
-
-            <div className="relative group cursor-pointer">
-              <a href="/product">Product</a>
-            </div>
+            
+            <div className="relative cursor-pointer portfolio-dropdown" onMouseDown={(e) => e.stopPropagation()}>
+              <button type="button" onClick={() => setIsPortfolioOpen(!isPortfolioOpen)} className="flex items-center" aria-expanded={isPortfolioOpen} aria-haspopup="true">
+                Portofolio ▾
+                </button>
+                {isPortfolioOpen && (
+                  <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-100 translate-y-1 transition-all">
+                    <LinkTo to="/portofolio" text="Portofolio"></LinkTo>
+                    <LinkTo to="/product" text="Product"></LinkTo>
+                  </div>
+                  )}
+              </div>
 
             <div className="relative group cursor-pointer">
               <a href="#">Hubungi</a>
+            </div>
+
+            <div className="relative group cursor-pointer">
+              <a href="/job-vacancy">Lowongan</a>
             </div>
 
             <div
@@ -78,7 +88,7 @@ const MainNavbar = () => {
                     text="Structure Organisation"
                   ></LinkTo>
                   <LinkTo to="/structure-usaha" text="Structure Businisess"></LinkTo>
-                  <LinkTo to="visi-misi" text="Visi & Misi"></LinkTo>
+                  <LinkTo to="/visi-misi" text="Visi & Misi"></LinkTo>
                   <LinkTo to="/logo" text="Logo"></LinkTo>
                   <LinkTo to="/Team" text="Team"></LinkTo>
                 </div>
