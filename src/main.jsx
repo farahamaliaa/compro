@@ -11,6 +11,7 @@ import LogoPhilosophy from "./Pages/Profile/LogoPhilosophy.jsx";
 import Team from "./Pages/Profile/Team.jsx";
 import StructureOrganisations from "./Pages/About/StructureOrganisations.jsx";
 import Portofolio from "./Pages/Portofolio/Portofolio.jsx";
+import PortofolioDetail from "./Pages/Portofolio/PortofolioDetail.jsx";
 import Profile from "./Pages/Profile.jsx";
 import RootLayout from "./components/Layouts/RootLayout.jsx";
 import Product from "./Pages/Product/Product.jsx";
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       { path: "Dashboard", element: <Dashoard /> },
       { path: "structure-organisations", element: <StructureOrganisations /> },
       { path: "portofolio", element: <Portofolio /> },
+      { path: "portofolio/:id", element: <PortofolioDetail />},
       { path: "profile", element: <Profile/>},
       { path: "logo", element: <LogoPhilosophy /> },
       { path: "team", element: <Team /> },
