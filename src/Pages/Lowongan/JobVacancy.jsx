@@ -62,7 +62,8 @@ const JobVacancy = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         {jobData.map((job) => (
           <JobCard
-            key={job.id}
+            key={job.slug}
+            slug={job.slug}
             image={job.image}
             title={job.title}
             description={job.description}

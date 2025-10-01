@@ -1,9 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const JobCard = ({ image, title, description }) => {
+const JobCard = ({ image, title, description, slug }) => {
   return (
     <div
-      className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition p-4 sm:p-6 flex flex-col"
+      className="bg-white shadow-md rounded-xl overflow-hidden transition p-4 sm:p-6 flex flex-col"
       data-aos="fade-up"
       data-aos-duration="800"
     >
@@ -24,13 +25,15 @@ const JobCard = ({ image, title, description }) => {
         </p>
       </div>
 
-      <button
+      <Link
+        to={`/job-vacancy/${slug}`}
         className="mt-4 w-full flex items-center justify-center gap-2 bg-blue-500 text-white py-2 sm:py-3 rounded-lg font-medium text-sm sm:text-base hover:bg-blue-600 transition"
         data-aos="fade-up"
-        data-aos-delay="400"
+        data-aos-duration="800"
+        data-aos-delay="150"
       >
-        Detail <FaArrowRight size={14} className="sm:w-4 sm:h-4" />
-      </button>
+        Detail <FaArrowRight />
+      </Link>
     </div>
   );
 };
