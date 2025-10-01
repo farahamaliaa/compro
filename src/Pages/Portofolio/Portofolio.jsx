@@ -12,7 +12,7 @@ export default function Portofolio() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 2000,
       once: true,
     });
   }, []);
@@ -45,13 +45,7 @@ export default function Portofolio() {
       </div>
 
       {/* Portfolio List */}
-      <section className="relative max-w-6xl mx-auto px-4 md:px-12 lg:px-4 py-48 lg:space-y-28 space-y-8">
-        <img
-          src="/images/projects/4.png"
-          alt="Shape"
-          className="absolute md:top-0 top-72 right-0 w-72 md:w-[35rem] lg:w-[55rem] opacity-80 pointer-events-none select-none -z-10"
-          data-aos="fade-up"
-        />
+      <section className="relative max-w-6xl mx-auto px-4 md:px-12 lg:px-4 py-36 lg:space-y-28 space-y-8">
 
         {portofolio.map((p, i) => (
           <div key={p.id} className="grid lg:grid-cols-2 gap-10 items-stretch">
@@ -60,7 +54,7 @@ export default function Portofolio() {
               <>
                 {/* Text Section */}
                 <div
-                  className="flex flex-col justify-between"
+                  className="flex flex-col justify-between px-3"
                   data-aos="fade-right"
                 >
                   <div>
@@ -70,11 +64,11 @@ export default function Portofolio() {
 
                     {/* Image Mobile */}
                     <div className="block lg:hidden justify-center mb-4">
-                      <div className="w-full max-w-3xl mx-auto">
+                      <div className="w-full max-w-3xl mx-auto aspect-video rounded-sm overflow-hidden shadow-lg">
                         <img
                           src={p.image}
                           alt={p.title}
-                          className="w-full rounded-md shadow-md"
+                          className="w-full h-full transform hover:scale-105 transition duration-500"
                         />
                       </div>
                     </div>
@@ -86,7 +80,7 @@ export default function Portofolio() {
                     <div className="flex justify-start gap-3 mb-12">
                       <button
                         className="w-1/2.5 lg:w-1/3 px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-semibold shadow-md text-sm md:text-base"
-                        onClick={() => navigate("#")}
+                        onClick={() => navigate(`/portofolio/${p.id}`)}
                       >
                         Lihat Detail
                       </button>
@@ -134,7 +128,7 @@ export default function Portofolio() {
 
                 {/* Text Section */}
                 <div
-                  className="flex flex-col justify-between"
+                  className="flex flex-col justify-between px-3"
                   data-aos="fade-left"
                 >
                   <div>
@@ -144,11 +138,11 @@ export default function Portofolio() {
 
                     {/* Image Mobile */}
                     <div className="block lg:hidden justify-center mb-4">
-                      <div className="w-full max-w-3xl">
+                      <div className="w-full max-w-3xl aspect-video rounded-sm overflow-hidden shadow-lg">
                         <img
                           src={p.image}
                           alt={p.title}
-                          className="w-full rounded-md shadow-md"
+                          className="w-full h-full transform hover:scale-105 transition duration-500"
                         />
                       </div>
                     </div>
@@ -160,7 +154,7 @@ export default function Portofolio() {
                     <div className="flex justify-start gap-3 mb-12">
                       <button
                         className="w-1/2.5 lg:w-1/3 px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition font-semibold shadow-md text-sm md:text-base"
-                        onClick={() => navigate("#")}
+                        onClick={() => navigate(`/portofolio/${p.id}`)}
                       >
                         Lihat Detail
                       </button>

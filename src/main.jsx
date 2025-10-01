@@ -11,6 +11,7 @@ import LogoPhilosophy from "./Pages/Profile/LogoPhilosophy.jsx";
 import Team from "./Pages/Profile/Team.jsx";
 import StructureOrganisations from "./Pages/About/StructureOrganisations.jsx";
 import Portofolio from "./Pages/Portofolio/Portofolio.jsx";
+import PortofolioDetail from "./Pages/Portofolio/PortofolioDetail.jsx";
 import Profile from "./Pages/Profile.jsx";
 import RootLayout from "./components/Layouts/RootLayout.jsx";
 import Product from "./Pages/Product/Product.jsx";
@@ -19,7 +20,9 @@ import Software from "./Pages/Product/Kategori/Software.jsx";
 import Website from "./Pages/Product/Kategori/Website.jsx";
 import Mobile from "./Pages/Product/Kategori/Mobile.jsx";
 import StructureUsaha from "./Pages/About/StructureUsaha.jsx";
+import ProductDetail from "./Pages/Product/ProductDetail.jsx";
 import VisiMisi from "./Pages/About/VisiMisi.jsx";
+import JobVacancy from "./Pages/Lowongan/JobVacancy.jsx";
 import Berita from "./Pages/Berita/Berita.jsx";
 
 const router = createBrowserRouter([
@@ -31,6 +34,7 @@ const router = createBrowserRouter([
       { path: "Dashboard", element: <Dashoard /> },
       { path: "structure-organisations", element: <StructureOrganisations /> },
       { path: "portofolio", element: <Portofolio /> },
+      { path: "portofolio/:id", element: <PortofolioDetail />},
       { path: "profile", element: <Profile/>},
       { path: "logo", element: <LogoPhilosophy /> },
       { path: "team", element: <Team /> },
@@ -40,14 +44,16 @@ const router = createBrowserRouter([
         path: "product",
         element: <Product />,
         children: [
-          { index: true, element: <Index /> },      // /product
-          { path: "software", element: <Software /> }, // /product/software
-          { path: "website", element: <Website /> },   // /product/website
-          { path: "mobile", element: <Mobile /> },     // /product/mobile
+          { index: true, element: <Index /> },   
+          { path: "software", element: <Software /> }, 
+          { path: "website", element: <Website /> },   
+          { path: "mobile", element: <Mobile /> },
+          { path: ":id", element: <ProductDetail />}
         ],
       },
       { path: "structure-usaha", element: <StructureUsaha /> },
-      { path: "visi-misi", element: <VisiMisi />},
+      { path: "visi-misi", element: <VisiMisi/>},
+      { path: "job-vacancy", element: <JobVacancy />},
       { path: "berita", element: <Berita />}
     ],
   },
