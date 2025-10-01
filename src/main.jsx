@@ -52,10 +52,16 @@ const router = createBrowserRouter([
         ],
       },
       { path: "structure-usaha", element: <StructureUsaha /> },
+
       { path: "visi-misi", element: <VisiMisi /> },
       { path: "job-vacancy", element: <JobVacancy /> },
       { path: "job-vacancy/:slug", element: <JobDetail /> },
       { path: "berita", element: <Berita /> },
+
+      { path: "visi-misi", element: <VisiMisi/>},
+      { path: "job-vacancy", element: <JobVacancy />},
+      { path: "berita", element: <Berita />}
+
     ],
   },
 ]);
