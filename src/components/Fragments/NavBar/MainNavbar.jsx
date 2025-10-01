@@ -44,7 +44,7 @@ const MainNavbar = () => {
             </div>
 
             <div className="relative group cursor-pointer">
-              <a href="#">Berita</a>
+              <a href="/berita">Berita</a>
             </div>
             
             <div className="relative cursor-pointer portfolio-dropdown" onMouseDown={(e) => e.stopPropagation()}>
@@ -160,7 +160,7 @@ const MainNavbar = () => {
             <a href="#" className="block">
               Product
             </a>
-            <a href="#" className="block">
+            <a href="/berita" className="block">
               Berita
             </a>
             <a href="#" className="block">

@@ -24,6 +24,7 @@ import ProductDetail from "./Pages/Product/ProductDetail.jsx";
 import VisiMisi from "./Pages/About/VisiMisi.jsx";
 import JobVacancy from "./Pages/Lowongan/JobVacancy.jsx";
 import JobDetail from "./Pages/Lowongan/DetailLowongan/JobDetail.jsx";
+import Berita from "./Pages/Berita/Berita.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,28 +35,27 @@ const router = createBrowserRouter([
       { path: "Dashboard", element: <Dashoard /> },
       { path: "structure-organisations", element: <StructureOrganisations /> },
       { path: "portofolio", element: <Portofolio /> },
-      { path: "portofolio/:id", element: <PortofolioDetail />},
-      { path: "profile", element: <Profile/>},
+      { path: "portofolio/:id", element: <PortofolioDetail /> },
+      { path: "profile", element: <Profile /> },
       { path: "logo", element: <LogoPhilosophy /> },
       { path: "team", element: <Team /> },
 
-
-
-        {
+      {
         path: "product",
         element: <Product />,
         children: [
-          { index: true, element: <Index /> },   
-          { path: "software", element: <Software /> }, 
-          { path: "website", element: <Website /> },   
+          { index: true, element: <Index /> },
+          { path: "software", element: <Software /> },
+          { path: "website", element: <Website /> },
           { path: "mobile", element: <Mobile /> },
-          { path: ":id", element: <ProductDetail />}
+          { path: ":id", element: <ProductDetail /> },
         ],
       },
       { path: "structure-usaha", element: <StructureUsaha /> },
-      { path: "visi-misi", element: <VisiMisi/>},
-      { path: "job-vacancy", element: <JobVacancy />},
-      { path: "job-vacancy/:slug", element: <JobDetail />}
+      { path: "visi-misi", element: <VisiMisi /> },
+      { path: "job-vacancy", element: <JobVacancy /> },
+      { path: "job-vacancy/:slug", element: <JobDetail /> },
+      { path: "berita", element: <Berita /> },
     ],
   },
 ]);
